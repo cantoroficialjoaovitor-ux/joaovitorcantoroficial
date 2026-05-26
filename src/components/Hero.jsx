@@ -4,20 +4,22 @@ export default function Hero() {
   return (
     <section className="hero">
 
-      <div className="hero-left">
+      <div className="hero-overlay"></div>
 
-        <span className="hero-mini">
-          Cantor Sertanejo
+      <div className="hero-content">
+
+        <span className="mini-title">
+          CANTOR SERTANEJO
         </span>
 
         <h1>
-          João <br /> Vitor
+          JOÃO <br /> VITOR
         </h1>
 
-        <div className="hero-line"></div>
+        <div className="hero-divider"></div>
 
         <p>
-          Shows • Agenda • Contratações
+          SHOWS • AGENDA • CONTRATAÇÕES
         </p>
 
         <h3>
@@ -28,16 +30,14 @@ export default function Hero() {
         <a
           href="https://wa.me/5511986894866"
           target="_blank"
-          className="hero-btn"
+          className="hero-button"
         >
-          Contratar Show
+          CONTRATAR SHOW
         </a>
 
       </div>
 
-      <div className="hero-right">
-        <img src={foto1} alt="João Vitor" />
-      </div>
+      <img src={foto1} alt="João Vitor" className="hero-image" />
 
     </section>
   );
