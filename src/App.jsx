@@ -1,18 +1,16 @@
-import Header from "./components/Header";
-import Hero from "./components/Hero";
-import Social from "./components/Social";
-import Sobre from "./components/Sobre";
-import Contato from "./components/Contato";
-import Footer from "./components/Footer";
+import "./index.css";
+
+import Cabecalho from "./componentes/Cabeçalho";
+import Hero from "./componentes/Hero";
+import Redes from "./componentes/Redes";
+import Footer from "./componentes/Footer";
 
 function App() {
   return (
     <>
-      <Header />
+      <Cabecalho />
       <Hero />
-      <Social />
-      <Sobre />
-      <Contato />
+      <Redes />
       <Footer />
     </>
   );
