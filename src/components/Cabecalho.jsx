@@ -1,6 +1,6 @@
-import logoInstagram from "../imagens/LOGO_INSTA-removebg-preview-Photoroom.png";
-import logoSpotify from "../imagens/logo-spotify-512-removebg-preview.png";
-import logoYoutube from "../imagens/Logo Youtube-Photoroom.png";
+import logoInstagram from "../imagens/instagram.png";
+import logoSpotify from "../imagens/spotify.png";
+import logoYoutube from "../imagens/youtube.png";
 
 export default function Cabecalho() {
   return (
