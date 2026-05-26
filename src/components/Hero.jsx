@@ -2,10 +2,12 @@ import foto1 from "../images/foto1.png";
 
 export default function Hero() {
   return (
-    <section className="hero">
-
-      <div className="hero-overlay"></div>
-
+    <section
+      className="hero"
+      style={{
+        backgroundImage: `linear-gradient(to right, rgba(0,0,0,0.92) 35%, rgba(0,0,0,0.3)), url(${foto1})`,
+      }}
+    >
       <div className="hero-content">
 
         <span className="mini-title">
@@ -16,19 +18,20 @@ export default function Hero() {
           JOÃO <br /> VITOR
         </h1>
 
-        <div className="hero-divider"></div>
+        <div className="hero-line"></div>
 
         <p>
           SHOWS • AGENDA • CONTRATAÇÕES
         </p>
 
         <h3>
-          Música que emociona, voz que marca,
+          Música que emociona,
+          voz que marca,
           presença que transforma.
         </h3>
 
         <a
-          href="https://wa.me/5511986894866"
+          href="https://wa.me/5511998923563"
           target="_blank"
           className="hero-button"
         >
@@ -36,9 +39,6 @@ export default function Hero() {
         </a>
 
       </div>
-
-      <img src={foto1} alt="João Vitor" className="hero-image" />
-
     </section>
   );
 }
