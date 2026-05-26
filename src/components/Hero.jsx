@@ -1,4 +1,4 @@
-import fotoJoao from "../imagens/joao.png";
+import fotoJoao from "../images/joao.png";
 
 export default function Hero() {
   return (
