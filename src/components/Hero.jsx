@@ -2,20 +2,28 @@ import foto1 from "../images/foto1.png";
 
 export default function Hero() {
   return (
-    <section
-      className="hero"
-      style={{
-        backgroundImage: `linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.85)), url(${foto1})`,
-      }}
-    >
-      <div className="hero-content">
-        <span className="mini-title">Cantor Sertanejo</span>
+    <section className="hero">
 
-        <h1>João Vitor</h1>
+      <div className="hero-left">
+
+        <span className="hero-mini">
+          Cantor Sertanejo
+        </span>
+
+        <h1>
+          João <br /> Vitor
+        </h1>
+
+        <div className="hero-line"></div>
 
         <p>
-          Shows • Eventos • Casamentos • Barzinhos • Grandes Eventos
+          Shows • Agenda • Contratações
         </p>
+
+        <h3>
+          Música que emociona, voz que marca,
+          presença que transforma.
+        </h3>
 
         <a
           href="https://wa.me/5511986894866"
@@ -24,7 +32,13 @@ export default function Hero() {
         >
           Contratar Show
         </a>
+
       </div>
+
+      <div className="hero-right">
+        <img src={foto1} alt="João Vitor" />
+      </div>
+
     </section>
   );
 }
