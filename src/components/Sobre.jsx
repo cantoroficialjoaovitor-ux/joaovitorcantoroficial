@@ -1,17 +1,33 @@
 export default function Sobre() {
   return (
-    <section className="bg-zinc-900 text-white py-20 px-6">
-      <div className="max-w-4xl mx-auto text-center">
-        <h2 className="text-4xl font-bold mb-8">
-          Sobre
-        </h2>
+    <section
+      style={{
+        padding: "80px 20px",
+        background: "#000",
+        textAlign: "center",
+      }}
+    >
+      <h2
+        style={{
+          fontSize: "40px",
+          marginBottom: "30px",
+        }}
+      >
+        Sobre
+      </h2>
 
-        <p className="text-lg text-gray-300 leading-8">
-          João Vitor é cantor sertanejo apaixonado pela música,
-          levando emoção e animação para eventos, bares,
-          casamentos e grandes shows.
-        </p>
-      </div>
+      <p
+        style={{
+          maxWidth: "800px",
+          margin: "0 auto",
+          fontSize: "20px",
+          lineHeight: "1.8",
+        }}
+      >
+        João Vitor é cantor sertanejo apaixonado pela música,
+        levando emoção, presença de palco e animação para eventos,
+        bares, casamentos e grandes shows.
+      </p>
     </section>
   )
 }
