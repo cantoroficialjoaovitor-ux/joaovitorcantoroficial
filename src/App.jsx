@@ -1,8 +1,8 @@
-import Hero from './components/Hero'
-import Sobre from './components/Sobre'
-import Galeria from './components/Galeria'
-import Contratacao from './components/Contratacao'
-import Footer from './components/Footer'
+import Hero from './componentes/Hero'
+import Sobre from './componentes/Sobre'
+import Galeria from './componentes/Galeria'
+import Contratacao from './componentes/Contratacao'
+import Footer from './componentes/Footer'
 
 export default function App() {
   return (
