@@ -1,17 +1,23 @@
-import Hero from './components/Hero'
-import Sobre from './components/Sobre'
-import Galeria from './components/Galeria'
-import Contratacao from './components/Contratacao'
-import Footer from './components/Footer'
+import Header from "./componentes/Header"
+import Hero from "./componentes/Hero"
+import Sobre from "./componentes/Sobre"
+import Galeria from "./componentes/Galeria"
+import Agenda from "./componentes/Agenda"
+import Videos from "./componentes/Videos"
+import Contato from "./componentes/Contato"
+import Footer from "./componentes/Footer"
 
 export default function App() {
   return (
-    <div>
+    <>
+      <Header />
       <Hero />
       <Sobre />
       <Galeria />
-      <Contratacao />
+      <Agenda />
+      <Videos />
+      <Contato />
       <Footer />
-    </div>
+    </>
   )
 }
