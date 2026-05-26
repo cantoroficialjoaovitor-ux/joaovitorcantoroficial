@@ -1,16 +1,18 @@
-import logoInstagram from "../images/instagram.png";
+import instagram from "../images/instagram.png";
 import spotify from "../images/spotify.png.png";
 import youtube from "../images/youtube.png.png";
 
-export default function Cabecalho() {
+function Cabecalho() {
   return (
     <header className="cabecalho">
-      <div className="container-header">
-        <div className="logo">João Vitor</div>
+      <div className="container-cabecalho">
+        
+        <div className="logo">
+          João Vitor
+        </div>
 
         <nav className="menu">
           <a href="#sobre">Sobre</a>
-
           <a href="#agenda">Agenda</a>
 
           <div className="dropdown">
@@ -19,18 +21,17 @@ export default function Cabecalho() {
             </button>
 
             <div className="dropdown-content">
+              
               <a
                 href="https://www.instagram.com/joaovitorcantoroficial"
                 target="_blank"
                 rel="noreferrer"
-                className="rede-link"
               >
                 <img
-                  src={logoInstagram}
+                  src={instagram}
                   alt="Instagram"
-                  className="icone-rede"
+                  className="icone-social"
                 />
-
                 Instagram
               </a>
 
@@ -38,14 +39,12 @@ export default function Cabecalho() {
                 href="https://open.spotify.com/intl-pt/artist/1NcHjMiIbcuCDUW9sg0Fls?si=mrISh3mHTd2RUhMKfRphuQ"
                 target="_blank"
                 rel="noreferrer"
-                className="rede-link"
               >
                 <img
-                  src={logoSpotify}
+                  src={spotify}
                   alt="Spotify"
-                  className="icone-rede"
+                  className="icone-social"
                 />
-
                 Spotify
               </a>
 
@@ -53,16 +52,15 @@ export default function Cabecalho() {
                 href="https://www.youtube.com/joaovitorcantoroficial"
                 target="_blank"
                 rel="noreferrer"
-                className="rede-link"
               >
                 <img
-                  src={logoYoutube}
+                  src={youtube}
                   alt="YouTube"
-                  className="icone-rede"
+                  className="icone-social"
                 />
-
                 YouTube
               </a>
+
             </div>
           </div>
 
@@ -74,8 +72,11 @@ export default function Cabecalho() {
           >
             Contratar Show
           </a>
+
         </nav>
       </div>
     </header>
   );
 }
+
+export default Cabecalho;
