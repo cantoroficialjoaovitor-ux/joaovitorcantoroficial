@@ -3,74 +3,37 @@ import foto1 from "../images/foto1.png"
 export default function Hero() {
   return (
     <section
-      style={
-  backgroundImage: `url(${foto1})`,
-  backgroundSize: "contain",
-  backgroundPosition: "center top",
-  backgroundRepeat: "no-repeat",
-  backgroundColor: "#000",
-}
+      className="min-h-screen flex items-center justify-center text-white relative"
+      style={{
+        backgroundImage: `url(${foto1})`,
+        backgroundSize: "contain",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+        backgroundColor: "#000",
       }}
     >
-      <div
-        style={{
-          background: "rgba(0,0,0,0.7)",
-          padding: "40px",
-          borderRadius: "20px",
-          maxWidth: "600px",
-        }}
-      >
-        <h1
-          style={{
-            fontSize: "60px",
-            marginBottom: "10px",
-          }}
-        >
+      <div className="bg-black/70 p-10 rounded-3xl text-center backdrop-blur-md">
+        <h1 className="text-6xl font-bold mb-4">
           João Vitor
         </h1>
 
-        <p
-          style={{
-            fontSize: "24px",
-            marginBottom: "30px",
-          }}
-        >
+        <p className="text-2xl mb-8">
           Shows • Agenda • Contratações
         </p>
 
         <a
           href="https://wa.me/5511986894866"
           target="_blank"
-          style={{
-            background: "#FFD700",
-            color: "#000",
-            padding: "15px 30px",
-            borderRadius: "10px",
-            fontWeight: "bold",
-            textDecoration: "none",
-            display: "inline-block",
-          }}
+          className="bg-yellow-400 text-black px-10 py-4 rounded-2xl font-bold text-xl hover:bg-yellow-300 transition"
         >
           Contratar Show
         </a>
 
-        <div
-          style={{
-            marginTop: "30px",
-            display: "flex",
-            gap: "15px",
-            justifyContent: "center",
-            flexWrap: "wrap",
-          }}
-        >
+        <div className="flex justify-center gap-6 mt-10 text-lg font-semibold">
           <a
             href="https://instagram.com/joaovitorcantoroficial"
             target="_blank"
-            style={{
-              color: "#fff",
-              textDecoration: "none",
-              fontWeight: "bold",
-            }}
+            className="hover:text-yellow-400"
           >
             Instagram
           </a>
@@ -78,11 +41,7 @@ export default function Hero() {
           <a
             href="https://www.youtube.com/joaovitorcantoroficial"
             target="_blank"
-            style={{
-              color: "#fff",
-              textDecoration: "none",
-              fontWeight: "bold",
-            }}
+            className="hover:text-yellow-400"
           >
             YouTube
           </a>
@@ -90,11 +49,7 @@ export default function Hero() {
           <a
             href="https://open.spotify.com/intl-pt/artist/1NcHjMiIbcuCDUW9sg0Fls?si=yy_ALRWvSWWHva33HYJSJg"
             target="_blank"
-            style={{
-              color: "#fff",
-              textDecoration: "none",
-              fontWeight: "bold",
-            }}
+            className="hover:text-yellow-400"
           >
             Spotify
           </a>
