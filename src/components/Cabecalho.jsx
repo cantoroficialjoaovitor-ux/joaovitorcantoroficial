@@ -1,4 +1,4 @@
-import logoInstagram from "../imagens/instagram.png";
+import logoInstagram from "../images/instagram.png";
 import logoSpotify from "../imagens/spotify.png";
 import logoYoutube from "../imagens/youtube.png";
 
