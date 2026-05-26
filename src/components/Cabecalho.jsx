@@ -1,4 +1,4 @@
-export default function Header() {
+export default function Cabecalho() {
   return (
     <header
       style={{
@@ -55,7 +55,7 @@ export default function Header() {
           </a>
 
           <a
-            href="https://wa.me/5511998923563"
+            href="https://wa.me/5511986894866"
             target="_blank"
             rel="noreferrer"
             style={botao}
