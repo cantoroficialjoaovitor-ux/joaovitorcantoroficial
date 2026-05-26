@@ -1,23 +1,21 @@
-import Header from "./components/Header.jsx"
-import Hero from "./components/Hero.jsx"
-import Sobre from "./components/Sobre.jsx"
-import Galeria from "./components/Galeria.jsx"
-import Agenda from "./components/Agenda.jsx"
-import Videos from "./components/Videos.jsx"
-import Contato from "./components/Contato.jsx"
-import Footer from "./components/Footer.jsx"
+import Header from "./components/Header";
+import Hero from "./components/Hero";
+import Social from "./components/Social";
+import Sobre from "./components/Sobre";
+import Contato from "./components/Contato";
+import Footer from "./components/Footer";
 
-export default function App() {
+function App() {
   return (
     <>
       <Header />
       <Hero />
+      <Social />
       <Sobre />
-      <Galeria />
-      <Agenda />
-      <Videos />
       <Contato />
       <Footer />
     </>
-  )
+  );
 }
+
+export default App;
