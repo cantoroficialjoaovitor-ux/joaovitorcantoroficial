@@ -1,4 +1,4 @@
-import Header from "./componentes/Header";
+import Cabecalho from "./componentes/Cabecalho";
 
 export default function App() {
   return (
@@ -10,7 +10,7 @@ export default function App() {
         fontFamily: "Arial",
       }}
     >
-      <Header />
+      <Cabecalho />
 
       <section
         style={{
@@ -90,68 +90,6 @@ export default function App() {
           </a>
         </div>
       </section>
-
-      <section
-        id="redes"
-        style={{
-          padding: "80px 40px",
-          background: "#0b0b0b",
-          textAlign: "center",
-        }}
-      >
-        <p
-          style={{
-            color: "#d4af37",
-            letterSpacing: "4px",
-          }}
-        >
-          ACOMPANHE
-        </p>
-
-        <h2
-          style={{
-            fontSize: "52px",
-            marginBottom: "50px",
-          }}
-        >
-          NAS REDES SOCIAIS
-        </h2>
-
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            gap: "30px",
-            flexWrap: "wrap",
-          }}
-        >
-          <div style={card}>
-            <div style={{ fontSize: "70px" }}>📸</div>
-            <h3>INSTAGRAM</h3>
-            <p>@joaovitorcantoroficial</p>
-          </div>
-
-          <div style={card}>
-            <div style={{ fontSize: "70px" }}>🎵</div>
-            <h3>SPOTIFY</h3>
-            <p>Ouça agora</p>
-          </div>
-
-          <div style={card}>
-            <div style={{ fontSize: "70px" }}>▶️</div>
-            <h3>YOUTUBE</h3>
-            <p>youtube.com/joaovitorcantoroficial</p>
-          </div>
-        </div>
-      </section>
     </div>
   );
 }
-
-const card = {
-  background: "#111",
-  border: "1px solid #333",
-  borderRadius: "20px",
-  padding: "40px",
-  width: "320px",
-};
