@@ -1,37 +1,88 @@
 export default function Cabecalho() {
   return (
-    <header className="header">
-
-      <div className="nav">
-
-        <div className="logo">
+    <header
+      style={{
+        position: "fixed",
+        top: 0,
+        width: "100%",
+        background: "#000",
+        zIndex: 999,
+        borderBottom: "1px solid #222",
+      }}
+    >
+      <div
+        style={{
+          maxWidth: "1400px",
+          margin: "0 auto",
+          padding: "18px 40px",
+          display: "flex",
+          justifyContent: "space-between",
+          alignItems: "center",
+        }}
+      >
+        <h1
+          style={{
+            color: "#fff",
+            fontSize: "28px",
+            fontWeight: "700",
+          }}
+        >
           João Vitor
-        </div>
+        </h1>
 
-        <div className="menu">
+        <nav
+          style={{
+            display: "flex",
+            alignItems: "center",
+            gap: "35px",
+          }}
+        >
+          <a href="#sobre" style={link}>
+            Sobre
+          </a>
 
-          <a href="#sobre">Sobre</a>
+          <a href="#agenda" style={link}>
+            Agenda
+          </a>
 
-          <a href="#agenda">Agenda</a>
+          <a href="#contato" style={link}>
+            Contato
+          </a>
 
-          <a href="#contato">Contato</a>
-
-          <a href="#redes">
+          <a href="#redes" style={linkGold}>
             Redes Sociais
           </a>
 
           <a
             href="https://wa.me/5511998923563"
             target="_blank"
-            className="menu-button"
+            style={botao}
           >
             Contratar Show
           </a>
-
-        </div>
-
+        </nav>
       </div>
-
     </header>
   );
 }
+
+const link = {
+  color: "#fff",
+  textDecoration: "none",
+  fontWeight: "500",
+};
+
+const linkGold = {
+  color: "#d4af37",
+  textDecoration: "none",
+  fontWeight: "600",
+};
+
+const botao = {
+  background: "#d4af37",
+  color: "#000",
+  padding: "14px 24px",
+  borderRadius: "12px",
+  textDecoration: "none",
+  fontWeight: "700",
+};
