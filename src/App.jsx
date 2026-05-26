@@ -1,5 +1,4 @@
 import "./index.css";
-
 import Cabecalho from "./componentes/Cabecalho";
 import Hero from "./componentes/Hero";
 import Redes from "./componentes/Redes";
