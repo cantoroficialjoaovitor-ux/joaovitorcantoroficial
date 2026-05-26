@@ -1,43 +1,45 @@
-import foto1 from "../images/foto1.png";
+import fotoJoao from "../imagens/Foto JV 2 - 1.png";
 
 export default function Hero() {
   return (
-    <section
-      className="hero"
-      style={{
-        backgroundImage: `linear-gradient(to right, rgba(0,0,0,0.92) 35%, rgba(0,0,0,0.3)), url(${foto1})`,
-      }}
-    >
-      <div className="hero-content">
+    <section className="hero">
+      <div className="overlay"></div>
 
-        <span className="mini-title">
-          CANTOR SERTANEJO
-        </span>
+      <div className="hero-conteudo">
+        <div className="texto-hero">
+          <span className="subtitulo">CANTOR SERTANEJO</span>
 
-        <h1>
-          JOÃO <br /> VITOR
-        </h1>
+          <h1>
+            JOÃO
+            <br />
+            VITOR
+          </h1>
 
-        <div className="hero-line"></div>
+          <p className="frase">
+            SHOWS • AGENDA • CONTRATAÇÕES
+          </p>
 
-        <p>
-          SHOWS • AGENDA • CONTRATAÇÕES
-        </p>
+          <p className="descricao">
+            Música que emociona,
+            <br />
+            voz que marca,
+            <br />
+            presença que transforma.
+          </p>
 
-        <h3>
-          Música que emociona,
-          voz que marca,
-          presença que transforma.
-        </h3>
+          <a
+            href="https://wa.me/5511986894866"
+            target="_blank"
+            rel="noreferrer"
+            className="btn-hero"
+          >
+            CONTRATAR SHOW
+          </a>
+        </div>
 
-        <a
-          href="https://wa.me/5511998923563"
-          target="_blank"
-          className="hero-button"
-        >
-          CONTRATAR SHOW
-        </a>
-
+        <div className="imagem-hero">
+          <img src={fotoJoao} alt="João Vitor" />
+        </div>
       </div>
     </section>
   );
