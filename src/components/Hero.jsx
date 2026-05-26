@@ -3,15 +3,13 @@ import foto1 from "../images/foto1.png"
 export default function Hero() {
   return (
     <section
-      style={{
-        height: "100vh",
-        backgroundImage: `url(${foto1})`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
-        textAlign: "center",
+      style={
+  backgroundImage: `url(${foto1})`,
+  backgroundSize: "contain",
+  backgroundPosition: "center top",
+  backgroundRepeat: "no-repeat",
+  backgroundColor: "#000",
+}
       }}
     >
       <div
