@@ -1,4 +1,4 @@
-export default function Cabecalho() {
+export default function Header() {
   return (
     <header
       style={{
@@ -25,6 +25,7 @@ export default function Cabecalho() {
             color: "#fff",
             fontSize: "28px",
             fontWeight: "700",
+            margin: 0,
           }}
         >
           João Vitor
@@ -56,6 +57,7 @@ export default function Cabecalho() {
           <a
             href="https://wa.me/5511998923563"
             target="_blank"
+            rel="noreferrer"
             style={botao}
           >
             Contratar Show
@@ -70,12 +72,14 @@ const link = {
   color: "#fff",
   textDecoration: "none",
   fontWeight: "500",
+  fontSize: "18px",
 };
 
 const linkGold = {
   color: "#d4af37",
   textDecoration: "none",
   fontWeight: "600",
+  fontSize: "18px",
 };
 
 const botao = {
