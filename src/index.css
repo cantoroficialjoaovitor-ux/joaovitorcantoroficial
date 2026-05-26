@@ -15,30 +15,31 @@ body{
 
 .header{
   position:fixed;
-  top:0;
   width:100%;
+  top:0;
   z-index:999;
   background:#000;
-  border-bottom:1px solid rgba(255,255,255,0.08);
+  border-bottom:1px solid rgba(255,255,255,0.05);
 }
 
 .nav{
   width:90%;
-  max-width:1400px;
+  max-width:1500px;
   margin:auto;
   height:90px;
   display:flex;
-  justify-content:space-between;
   align-items:center;
+  justify-content:space-between;
 }
 
 .logo{
-  font-size:48px;
+  font-size:32px;
   font-weight:900;
 }
 
 .menu{
   display:flex;
+  align-items:center;
   gap:40px;
 }
 
@@ -46,35 +47,33 @@ body{
   color:white;
   text-decoration:none;
   font-weight:bold;
-  font-size:18px;
+  transition:0.3s;
+}
+
+.menu a:hover{
+  color:#d4af37;
+}
+
+.menu-button{
+  background:#d4af37;
+  color:#000 !important;
+  padding:16px 28px;
+  border-radius:12px;
 }
 
 /* HERO */
 
 .hero{
-  position:relative;
   min-height:100vh;
-  overflow:hidden;
+  background-size:cover;
+  background-position:center;
   display:flex;
   align-items:center;
   padding:0 8%;
-  background:
-  radial-gradient(circle at center,#d69a2d33,transparent 45%),
-  #000;
-}
-
-.hero-overlay{
-  position:absolute;
-  inset:0;
-  background:
-  linear-gradient(to right,#000 35%,transparent 70%);
-  z-index:1;
 }
 
 .hero-content{
-  position:relative;
-  z-index:2;
-  width:50%;
+  max-width:650px;
 }
 
 .mini-title{
@@ -84,13 +83,13 @@ body{
 }
 
 .hero h1{
-  font-size:160px;
-  line-height:0.9;
+  font-size:170px;
+  line-height:0.88;
   margin:25px 0;
   font-weight:900;
 }
 
-.hero-divider{
+.hero-line{
   width:180px;
   height:3px;
   background:#d4af37;
@@ -98,15 +97,13 @@ body{
 }
 
 .hero p{
-  font-size:24px;
-  margin-bottom:25px;
-  color:#ddd;
+  font-size:28px;
+  margin-bottom:30px;
 }
 
 .hero h3{
-  font-size:30px;
-  color:#bbb;
-  max-width:700px;
+  font-size:32px;
+  color:#ddd;
   line-height:1.5;
   margin-bottom:50px;
   font-weight:400;
@@ -114,13 +111,13 @@ body{
 
 .hero-button{
   display:inline-block;
-  padding:22px 55px;
   background:#d4af37;
   color:#000;
-  border-radius:60px;
+  padding:22px 50px;
+  border-radius:18px;
   text-decoration:none;
-  font-size:22px;
   font-weight:bold;
+  font-size:24px;
   transition:0.3s;
 }
 
@@ -128,67 +125,43 @@ body{
   transform:scale(1.05);
 }
 
-.hero-image{
-  position:absolute;
-  right:0;
-  bottom:0;
-  height:95vh;
-  object-fit:contain;
-  z-index:1;
-  filter:
-  drop-shadow(0 0 40px rgba(212,175,55,0.25));
-}
-
-/* SOBRE */
-
-.sobre{
-  padding:140px 8%;
-  text-align:center;
-  background:#050505;
-}
-
-.sobre h2{
-  font-size:70px;
-  margin-bottom:40px;
-}
-
-.sobre p{
-  font-size:28px;
-  color:#bbb;
-  max-width:1000px;
-  margin:auto;
-  line-height:1.7;
-}
-
 /* REDES */
 
 .social{
-  padding:140px 8%;
-  background:#000;
+  padding:120px 8%;
   text-align:center;
+  background:
+  linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.95));
+  border-top:1px solid #7a5b17;
+}
+
+.social-mini{
+  color:#d4af37;
+  letter-spacing:5px;
+  font-size:20px;
 }
 
 .social h2{
   font-size:70px;
-  margin-bottom:70px;
+  margin:20px 0 70px;
 }
 
 .social-grid{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
   gap:40px;
-  max-width:1300px;
+  max-width:1400px;
   margin:auto;
 }
 
 .social-card{
-  background:#111;
-  border:1px solid rgba(255,255,255,0.06);
+  background:#0c0c0c;
+  border:1px solid rgba(212,175,55,0.25);
   border-radius:30px;
   padding:60px 30px;
-  transition:0.3s;
   text-decoration:none;
   color:white;
+  transition:0.3s;
 }
 
 .social-card:hover{
@@ -196,18 +169,20 @@ body{
   border:1px solid #d4af37;
 }
 
+.icon{
+  font-size:90px;
+  margin-bottom:25px;
+}
+
 .social-card h3{
   font-size:34px;
-  margin:25px 0 10px;
+  margin-bottom:15px;
 }
 
 .social-card p{
-  color:#bbb;
+  color:#ccc;
   font-size:20px;
-}
-
-.icon{
-  font-size:80px;
+  line-height:1.5;
 }
 
 /* FOOTER */
@@ -215,8 +190,8 @@ body{
 .footer{
   padding:40px;
   text-align:center;
-  border-top:1px solid rgba(255,255,255,0.08);
-  color:#888;
+  color:#999;
+  border-top:1px solid rgba(255,255,255,0.05);
 }
 
 /* RESPONSIVO */
@@ -224,42 +199,23 @@ body{
 @media(max-width:1100px){
 
 .hero{
-  padding-top:180px;
   text-align:center;
-  justify-content:center;
-}
-
-.hero-content{
-  width:100%;
-}
-
-.hero-image{
-  position:relative;
-  height:500px;
-  margin-top:50px;
-}
-
-.hero{
-  flex-direction:column;
 }
 
 .hero h1{
   font-size:90px;
 }
 
-.hero-divider{
-  margin:auto auto 30px;
-}
-
 .hero h3{
-  margin:auto auto 40px;
+  font-size:24px;
 }
 
-.nav{
-  flex-direction:column;
-  height:auto;
-  padding:20px 0;
+.menu{
   gap:20px;
+}
+
+.social h2{
+  font-size:42px;
 }
 
 }
