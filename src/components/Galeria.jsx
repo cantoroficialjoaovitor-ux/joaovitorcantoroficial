@@ -1,6 +1,6 @@
-import foto1 from "../imagens/foto1.png"
-import foto2 from "../imagens/foto2.png"
-import foto3 from "../imagens/foto3.png"
+import foto1 from "../images/foto1.png"
+import foto2 from "../images/foto2.png"
+import foto3 from "../images/foto3.png"
 
 export default function Galeria() {
   return (
