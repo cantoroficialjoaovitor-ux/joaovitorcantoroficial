@@ -1,46 +1,29 @@
-import foto1 from "../images/foto1.png"
 import foto2 from "../images/foto2.png"
 import foto3 from "../images/foto3.png"
+import foto4 from "../images/foto4.png"
+import foto5 from "../images/foto5.png"
 
 export default function Galeria() {
+  const fotos = [foto2, foto3, foto4, foto5]
+
   return (
-    <section
-      style={{
-        padding: "80px 20px",
-        background: "#111",
-        textAlign: "center",
-      }}
-    >
-      <h2
-        style={{
-          fontSize: "40px",
-          marginBottom: "40px",
-        }}
-      >
+    <section className="bg-[#0a0a0a] text-white py-24 px-6">
+      <h2 className="text-5xl font-bold text-center mb-16">
         Galeria
       </h2>
 
-      <div
-        style={{
-          display: "grid",
-          gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))",
-          gap: "20px",
-          maxWidth: "1200px",
-          margin: "0 auto",
-        }}
-      >
-        {[foto1, foto2, foto3].map((foto, index) => (
-          <img
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
+        {fotos.map((foto, index) => (
+          <div
             key={index}
-            src={foto}
-            alt="João Vitor"
-            style={{
-              width: "100%",
-              borderRadius: "20px",
-              height: "350px",
-              objectFit: "cover",
-            }}
-          />
+            className="overflow-hidden rounded-3xl bg-black shadow-2xl hover:scale-105 transition duration-300"
+          >
+            <img
+              src={foto}
+              alt={`Foto ${index + 1}`}
+              className="w-full h-[500px] object-cover"
+            />
+          </div>
         ))}
       </div>
     </section>
