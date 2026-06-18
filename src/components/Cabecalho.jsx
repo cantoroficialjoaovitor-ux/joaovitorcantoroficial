@@ -6,14 +6,24 @@ function Cabecalho() {
   return (
     <header className="cabecalho">
       <div className="container-cabecalho">
-        
+
         <div className="logo">
           João Vitor
         </div>
 
         <nav className="menu">
+
+          <a href="#home">Home</a>
+
           <a href="#sobre">Sobre</a>
-          <a href="#agenda">Agenda</a>
+
+          <a href="#livemarketing">Live Marketing</a>
+
+          <a href="#manifesto">Manifesto</a>
+
+          <a href="#experiencias">Experiências</a>
+
+          <a href="#contato">Contato</a>
 
           <div className="dropdown">
             <button className="dropbtn">
@@ -21,7 +31,7 @@ function Cabecalho() {
             </button>
 
             <div className="dropdown-content">
-              
+
               <a
                 href="https://www.instagram.com/joaovitorcantoroficial"
                 target="_blank"
@@ -36,7 +46,7 @@ function Cabecalho() {
               </a>
 
               <a
-                href="https://open.spotify.com/intl-pt/artist/1NcHjMiIbcuCDUW9sg0Fls?si=mrISh3mHTd2RUhMKfRphuQ"
+                href="https://open.spotify.com/intl-pt/artist/1NcHjMiIbcuCDUW9sg0Fls"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -68,12 +78,13 @@ function Cabecalho() {
             href="https://wa.me/5511986894866"
             target="_blank"
             rel="noreferrer"
-            className="botao-show"
+            className="botao-orcamento"
           >
-            Contratar Show
+            Solicitar Orçamento
           </a>
 
         </nav>
+
       </div>
     </header>
   );
