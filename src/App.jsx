@@ -1,3 +1,4 @@
+import LiveMarketing from "./componentes/LiveMarketing";
 import "./index.css";
 
 import Cabecalho from "./componentes/Cabecalho";
@@ -19,6 +20,7 @@ function App() {
       <Hero />
 
       <Sobre />
+      <LiveMarketing />
 
       <Agenda />
 
