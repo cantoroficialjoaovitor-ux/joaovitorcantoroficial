@@ -214,3 +214,26 @@ html {
     font-size: 16px;
   }
 }
+.hero-botoes{
+  display:flex;
+  gap:15px;
+  margin-top:25px;
+  flex-wrap:wrap;
+}
+
+.btn-secundario{
+  padding:12px 24px;
+  border:2px solid #d4a42c;
+  color:#d4a42c;
+  text-decoration:none;
+  border-radius:8px;
+  font-weight:600;
+  transition:0.3s;
+}
+
+.btn-secundario:hover{
+  transform:translateY(-2px);
+}
+html {
+  scroll-behavior: smooth;
+}
