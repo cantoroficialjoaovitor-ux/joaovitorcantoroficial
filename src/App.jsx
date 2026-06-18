@@ -1,9 +1,11 @@
-import LiveMarketing from "./componentes/LiveMarketing";
 import "./index.css";
 
 import Cabecalho from "./componentes/Cabecalho";
 import Hero from "./componentes/Hero";
 import Sobre from "./componentes/Sobre";
+import LiveMarketing from "./componentes/LiveMarketing";
+import Manifesto from "./componentes/Manifesto";
+import Experiencias from "./componentes/Experiencias";
 import Agenda from "./componentes/Agenda";
 import Videos from "./componentes/Videos";
 import Galeria from "./componentes/Galeria";
@@ -20,7 +22,12 @@ function App() {
       <Hero />
 
       <Sobre />
+
       <LiveMarketing />
+
+      <Manifesto />
+
+      <Experiencias />
 
       <Agenda />
 
