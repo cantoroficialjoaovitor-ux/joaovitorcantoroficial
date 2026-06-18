@@ -4,17 +4,19 @@
   box-sizing: border-box;
 }
 
-body {
-  background: #000;
-  color: white;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
 html {
   scroll-behavior: smooth;
 }
 
-/* HEADER */
+body {
+  background: #000;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* =========================
+   CABEÇALHO
+========================= */
 
 .cabecalho {
   width: 100%;
@@ -25,36 +27,40 @@ html {
   z-index: 999;
 }
 
-.container-header {
+.container-cabecalho {
   max-width: 1400px;
-  margin: auto;
-  height: 90px;
+  margin: 0 auto;
+  min-height: 90px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 40px;
+  padding: 0 30px;
 }
 
 .logo {
-  font-size: 52px;
+  font-size: 32px;
   font-weight: bold;
+  color: #fff;
+  white-space: nowrap;
 }
 
 .menu {
   display: flex;
   align-items: center;
-  gap: 35px;
+  gap: 15px;
+  flex-wrap: wrap;
 }
 
 .menu a,
 .dropbtn {
-  color: white;
+  color: #fff;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 17px;
   font-weight: 600;
   background: transparent;
   border: none;
   cursor: pointer;
+  transition: 0.3s;
 }
 
 .menu a:hover,
@@ -62,7 +68,9 @@ html {
   color: #d4af37;
 }
 
-/* dropdown */
+/* =========================
+   DROPDOWN
+========================= */
 
 .dropdown {
   position: relative;
@@ -76,6 +84,7 @@ html {
   border-radius: 12px;
   overflow: hidden;
   top: 40px;
+  left: 0;
 }
 
 .dropdown-content a {
@@ -88,20 +97,64 @@ html {
   display: block;
 }
 
-.botao-show {
-  background: #d4af37 !important;
-  color: #000 !important;
-  padding: 15px 30px;
-  border-radius: 14px;
-  font-weight: bold;
+.icone-social {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  vertical-align: middle;
 }
 
-/* HERO */
+/* =========================
+   BOTÕES
+========================= */
+
+.botao-orcamento,
+.botao-show {
+  background: #d4af37;
+  color: #000 !important;
+  padding: 14px 26px;
+  border-radius: 12px;
+  font-weight: bold;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: 0.3s;
+}
+
+.botao-orcamento:hover,
+.botao-show:hover {
+  opacity: 0.9;
+}
+
+.hero-botoes {
+  display: flex;
+  gap: 15px;
+  margin-top: 25px;
+  flex-wrap: wrap;
+}
+
+.btn-secundario {
+  padding: 12px 24px;
+  border: 2px solid #d4af37;
+  color: #d4af37;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn-secundario:hover {
+  transform: translateY(-2px);
+}
+
+/* =========================
+   HERO
+========================= */
 
 .hero {
   width: 100%;
   min-height: 100vh;
-  background: linear-gradient(to right, #000 35%, rgba(0, 0, 0, 0.5)),
+  background:
+    linear-gradient(to right, #000 35%, rgba(0,0,0,0.5)),
     url("https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?q=80&w=2070");
   background-size: cover;
   background-position: center;
@@ -113,10 +166,10 @@ html {
 .hero-conteudo {
   max-width: 1400px;
   margin: auto;
+  min-height: 90vh;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  min-height: 90vh;
   padding: 0 60px;
 }
 
@@ -127,24 +180,24 @@ html {
 
 .subtitulo {
   color: #d4af37;
-  letter-spacing: 8px;
-  font-size: 28px;
+  letter-spacing: 5px;
+  font-size: 24px;
 }
 
 .texto-hero h1 {
-  font-size: 150px;
+  font-size: 140px;
   line-height: 0.9;
   margin: 30px 0;
 }
 
 .frase {
-  font-size: 30px;
-  margin-bottom: 30px;
+  font-size: 28px;
+  margin-bottom: 25px;
 }
 
 .descricao {
-  font-size: 34px;
-  line-height: 1.5;
+  font-size: 26px;
+  line-height: 1.6;
   color: #ddd;
   margin-bottom: 40px;
 }
@@ -153,17 +206,20 @@ html {
   background: #d4af37;
   color: #000;
   text-decoration: none;
-  padding: 22px 40px;
-  border-radius: 16px;
-  font-size: 24px;
+  padding: 20px 36px;
+  border-radius: 14px;
+  font-size: 22px;
   font-weight: bold;
 }
 
 .imagem-hero img {
-  width: 700px;
+  width: 650px;
+  max-width: 100%;
 }
 
-/* SOBRE */
+/* =========================
+   SOBRE E SEÇÕES
+========================= */
 
 .sobre {
   padding: 120px 40px;
@@ -177,7 +233,7 @@ html {
 
 .sobre h2 {
   font-size: 56px;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   color: #d4af37;
 }
 
@@ -185,12 +241,25 @@ html {
   font-size: 24px;
   line-height: 1.9;
   color: #ddd;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 
-/* RESPONSIVO */
+/* =========================
+   RESPONSIVO
+========================= */
 
 @media (max-width: 1100px) {
+
+  .container-cabecalho {
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+  }
+
+  .menu {
+    justify-content: center;
+  }
+
   .hero-conteudo {
     flex-direction: column;
     text-align: center;
@@ -205,35 +274,12 @@ html {
     margin-top: 40px;
   }
 
-  .menu {
-    gap: 18px;
-  }
-
   .menu a,
   .dropbtn {
-    font-size: 16px;
+    font-size: 15px;
   }
-}
-.hero-botoes{
-  display:flex;
-  gap:15px;
-  margin-top:25px;
-  flex-wrap:wrap;
-}
 
-.btn-secundario{
-  padding:12px 24px;
-  border:2px solid #d4a42c;
-  color:#d4a42c;
-  text-decoration:none;
-  border-radius:8px;
-  font-weight:600;
-  transition:0.3s;
-}
-
-.btn-secundario:hover{
-  transform:translateY(-2px);
-}
-html {
-  scroll-behavior: smooth;
+  .descricao {
+    font-size: 22px;
+  }
 }
