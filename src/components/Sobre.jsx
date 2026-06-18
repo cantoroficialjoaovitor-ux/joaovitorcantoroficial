@@ -2,60 +2,48 @@ export default function Sobre() {
   return (
     <section id="sobre" className="sobre">
       <div className="container">
+
         <h2>Sobre João Vitor</h2>
 
         <p>
-          João Vitor é um talentoso artista nascido na charmosa cidade de
-          Lambari, localizada no sul de Minas Gerais.
+          Natural de Lambari, no sul de Minas Gerais, João Vitor construiu sua
+          trajetória na música sertaneja através da autenticidade, do carisma e
+          de um timbre marcante que o diferencia no cenário musical brasileiro.
         </p>
 
         <p>
-          Sua abordagem musical se destaca de forma distinta em relação aos
-          artistas sertanejos que dominam o cenário atual.
+          Com uma interpretação envolvente e repertório cuidadosamente
+          selecionado, o artista leva ao público uma experiência que une a
+          essência do sertanejo tradicional à emoção das grandes canções que
+          atravessaram gerações.
         </p>
 
         <p>
-          O que o diferencia é o seu timbre de voz singular e a sua notável
-          criatividade, elementos que têm impulsionado sua ascensão no universo
-          da música sertaneja no Brasil.
+          Ao longo de sua carreira, participou de diversos projetos musicais,
+          consolidando sua experiência de palco e ampliando sua conexão com o
+          público. Hoje, segue carreira solo, apresentando um trabalho sólido,
+          profissional e voltado para eventos de diferentes formatos e portes.
         </p>
 
         <p>
-          Ao longo de sua carreira, João Vitor passou por diversos projetos
-          musicais em parceria com outros artistas, mas hoje ele se reinventa e
-          trilha seu próprio caminho como cantor solo.
+          Entre seus lançamentos estão os EPs "João Vitor Acústico",
+          "João Vitor Resenha" e "João Vitor Acústico 2", além da música
+          autoral "Desejo", disponível nas principais plataformas digitais.
         </p>
 
         <p>
-          Seus EPs, amplamente disponíveis em todas as plataformas de música,
-          são uma jornada nostálgica pelos antigos sucessos que marcaram uma era
-          no sertanejo.
+          Seja em apresentações acústicas, eventos corporativos, feiras,
+          confraternizações, casamentos ou grandes celebrações, João Vitor
+          entrega performances marcadas pela proximidade com o público,
+          qualidade musical e profissionalismo.
         </p>
 
         <p>
-          Em 2022, João Vitor presenteou seu público com seu primeiro EP solo,
-          intitulado "João Vitor Acústico".
+          Com banda completa, equipe técnica especializada e estrutura adaptável
+          para cada ocasião, cada apresentação é planejada para transformar
+          momentos especiais em experiências memoráveis.
         </p>
 
-        <p>
-          Em 2023, o cantor lançou dois novos EPs, "João Vitor Resenha" e
-          "João Vitor Acústico 2".
-        </p>
-
-        <p>
-          Além disso, João Vitor lançou sua primeira canção inédita e original,
-          "Desejo".
-        </p>
-
-        <p>
-          Com uma banda robusta, talentosa e uma equipe técnica completa, o
-          show de João Vitor é sinônimo de garantia de qualidade e carisma.
-        </p>
-
-        <p>
-          Sua trajetória promissora continua a surpreender e encantar amantes da
-          música sertaneja em todo o país.
-        </p>
       </div>
     </section>
   );
