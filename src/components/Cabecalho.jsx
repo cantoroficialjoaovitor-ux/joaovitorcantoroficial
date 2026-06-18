@@ -8,8 +8,8 @@ function Cabecalho() {
       <div className="container-cabecalho">
 
         <div className="logo">
-          João Vitor
-        </div>
+  TESTE 2026
+</div>
 
         <nav className="menu">
 
