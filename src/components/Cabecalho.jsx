@@ -1,6 +1,6 @@
-import instagram from "../images/instagram.png";
-import spotify from "../images/spotify.png.png";
-import youtube from "../images/youtube.png.png";
+import instagram from "../imagens/instagram.png";
+import spotify from "../imagens/spotify.png.png";
+import youtube from "../imagens/youtube.png.png";
 
 function Cabecalho() {
   return (
@@ -8,8 +8,8 @@ function Cabecalho() {
       <div className="container-cabecalho">
 
         <div className="logo">
-  SITE NOVO 999
-</div>
+          SITE NOVO 999
+        </div>
 
         <nav className="menu">
 
@@ -37,24 +37,14 @@ function Cabecalho() {
                 target="_blank"
                 rel="noreferrer"
               >
-                <img
-                  src={instagram}
-                  alt="Instagram"
-                  className="icone-social"
-                />
                 Instagram
               </a>
 
               <a
-                href="https://open.spotify.com/intl-pt/artist/1NcHjMiIbcuCDUW9sg0Fls"
+                href="https://open.spotify.com"
                 target="_blank"
                 rel="noreferrer"
               >
-                <img
-                  src={spotify}
-                  alt="Spotify"
-                  className="icone-social"
-                />
                 Spotify
               </a>
 
@@ -63,11 +53,6 @@ function Cabecalho() {
                 target="_blank"
                 rel="noreferrer"
               >
-                <img
-                  src={youtube}
-                  alt="YouTube"
-                  className="icone-social"
-                />
                 YouTube
               </a>
 
