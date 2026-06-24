@@ -13,9 +13,7 @@ export default function Hero() {
           </span>
 
           <h1>
-            JOÃO
-            <br />
-            VITOR
+            SITE TESTE 9999
           </h1>
 
           <p className="frase">
